@@ -1,0 +1,22 @@
+
+version: 1
+
+frontend:
+
+  phases:
+
+    build:
+
+      commands:
+
+        - echo "Deploying BandStand Media"
+
+
+  artifacts:
+
+    baseDirectory: .
+
+    files:
+
+      - '**/*'
+
