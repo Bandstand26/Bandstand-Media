@@ -89,8 +89,7 @@ const SIGNUP_API_URL =
 */
 
 
-const SIGNUP_API_URL =
-  "";
+const SIGNUP_API_URL = "https://6pnfk4d1eb.execute-api.us-east-2.amazonaws.com";
 
 
 const signupForm =
