@@ -245,3 +245,91 @@ signupForm.addEventListener(
   }
 );
 
+
+const PROGRAM_INTEREST_API_URL =
+  "https://8ggnyo205m.execute-api.us-east-2.amazonaws.com";
+
+const programInterestForm =
+  document.getElementById("programInterestForm");
+
+const programFormMessage =
+  document.getElementById("programFormMessage");
+
+if (programInterestForm) {
+
+  programInterestForm.addEventListener(
+    "submit",
+    async (event) => {
+
+      event.preventDefault();
+
+      const submitButton =
+        programInterestForm.querySelector("button[type='submit']");
+
+      const interests =
+        Array.from(
+          programInterestForm.querySelectorAll(
+            "input[name='interest']:checked"
+          )
+        ).map(input => input.value);
+
+      const data = {
+        name: document.getElementById("programNameField").value.trim(),
+        email: document.getElementById("programEmail").value.trim().toLowerCase(),
+        phone: document.getElementById("programPhone").value.trim(),
+        role: document.getElementById("programRole").value,
+        school: document.getElementById("programSchool").value.trim(),
+        schoolLevel: document.getElementById("programSchoolLevel").value,
+        city: document.getElementById("programCity").value.trim(),
+        state: document.getElementById("programState").value.trim(),
+        programName: document.getElementById("programUnitName").value.trim(),
+        programSize: document.getElementById("programSize").value,
+        interests: interests,
+        notes: document.getElementById("programNotes").value.trim()
+      };
+
+      submitButton.disabled = true;
+      submitButton.textContent = "SUBMITTING...";
+      programFormMessage.textContent = "";
+
+      try {
+
+        const response =
+          await fetch(
+            PROGRAM_INTEREST_API_URL,
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(data)
+            }
+          );
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.message || "Unable to submit.");
+        }
+
+        programFormMessage.textContent =
+          result.message ||
+          "Thank you! BandStand Media will be in touch.";
+
+        programInterestForm.reset();
+
+      } catch (error) {
+
+        console.error(error);
+
+        programFormMessage.textContent =
+          "Something went wrong. Please try again.";
+
+      } finally {
+
+        submitButton.disabled = false;
+        submitButton.textContent = "SUBMIT PROGRAM INTEREST";
+      }
+    }
+  );
+}
