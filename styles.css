@@ -2591,3 +2591,35 @@ SMALL PHONE
 
 }
 
+
+/* TEXT-ONLY BANDSTAND MEDIA HEADER */
+
+.header-brand-name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+
+.header-brand-name strong {
+  color: #e3aa20;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 800px) {
+  .header-brand-name {
+    font-size: 18px;
+  }
+
+  .header-brand-name strong {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}
+
