@@ -246,8 +246,7 @@ signupForm.addEventListener(
 );
 
 
-const PROGRAM_INTEREST_API_URL =
-  "https://8ggnyo205m.execute-api.us-east-2.amazonaws.com";
+const PROGRAM_INTEREST_API_URL = "https://8ggnyo205m.execute-api.us-east-2.amazonaws.com";
 
 const programInterestForm =
   document.getElementById("programInterestForm");
