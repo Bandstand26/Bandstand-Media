@@ -1372,8 +1372,461 @@
 
   </div>
 </section>
+<section id="bandstand-demo" class="bandstand-demo">
+  <div class="demo-shell">
 
-  <script src="script.js?v=20260809-2"></script>
+    <div class="demo-heading">
+      <span>INTERACTIVE PREVIEW</span>
+      <h2>EXPLORE BANDSTAND</h2>
+      <p>
+        Click through a simplified demo of the BandStand experience.
+        This preview demonstrates core features and platform concepts
+        without creating a real account.
+      </p>
+    </div>
+
+    <div class="demo-app">
+
+      <aside class="demo-sidebar">
+
+        <div class="demo-logo">
+          BANDSTAND
+          <small>DEMO</small>
+        </div>
+
+        <button class="demo-nav active" data-demo="feed">
+          Feed
+        </button>
+
+        <button class="demo-nav" data-demo="live">
+          Go Live
+        </button>
+
+        <button class="demo-nav" data-demo="battle">
+          Virtual Battles
+        </button>
+
+        <button class="demo-nav" data-demo="directors">
+          Director Tools
+        </button>
+
+        <button class="demo-nav" data-demo="creators">
+          Creator Earnings
+        </button>
+
+        <button class="demo-nav" data-demo="tv">
+          BandStand TV
+        </button>
+
+        <button class="demo-nav" data-demo="safety">
+          Safety
+        </button>
+
+      </aside>
+
+
+      <div class="demo-screen">
+
+        <!-- FEED -->
+        <div class="demo-panel active" id="demo-feed">
+
+          <div class="demo-topbar">
+            <div>
+              <strong>BandStand Feed</strong>
+              <small>Discover the culture</small>
+            </div>
+
+            <span class="demo-user">
+              BR
+            </span>
+          </div>
+
+          <div class="demo-composer">
+            <strong>Create</strong>
+
+            <div class="demo-compose-actions">
+              <button>Statement</button>
+              <button>Photo</button>
+              <button>Crank Up</button>
+              <button>Go Live</button>
+            </div>
+          </div>
+
+          <article class="demo-post">
+            <div class="demo-post-head">
+              <div class="demo-avatar">SU</div>
+
+              <div>
+                <strong>Southern University</strong>
+                <small>Human Jukebox · College Band</small>
+              </div>
+            </div>
+
+            <div class="demo-video-placeholder">
+              CRANK UP
+              <small>0:42 performance clip</small>
+            </div>
+
+            <div class="demo-post-actions">
+              <span>♥ 2.4K</span>
+              <span>💬 318</span>
+              <span>↗ Share</span>
+            </div>
+          </article>
+
+          <article class="demo-post">
+            <div class="demo-post-head">
+              <div class="demo-avatar">TSU</div>
+
+              <div>
+                <strong>Ocean of Soul</strong>
+                <small>Texas Southern University</small>
+              </div>
+            </div>
+
+            <p>
+              Schedule Breaker matchup announced.
+              Who takes the fifth quarter?
+            </p>
+
+            <div class="demo-post-actions">
+              <span>♥ 1.8K</span>
+              <span>💬 204</span>
+              <span>↗ Share</span>
+            </div>
+          </article>
+
+        </div>
+
+
+        <!-- LIVE -->
+        <div class="demo-panel" id="demo-live">
+
+          <div class="demo-feature-title">
+            <span>LIVE STREAMING</span>
+            <h3>Take the performance live.</h3>
+          </div>
+
+          <div class="demo-live-layout">
+
+            <div class="demo-live-video">
+              <span class="live-badge">LIVE</span>
+
+              <div class="live-center">
+                BANDSTAND LIVE
+                <small>Mock livestream preview</small>
+              </div>
+
+              <div class="viewer-count">
+                1,284 watching
+              </div>
+            </div>
+
+            <div class="demo-live-controls">
+
+              <label>
+                Stream Title
+                <input value="Friday Night Fifth Quarter" readonly>
+              </label>
+
+              <label>
+                Access
+                <select>
+                  <option>Free</option>
+                  <option>Paid Stream — $4.99</option>
+                </select>
+              </label>
+
+              <div class="demo-gifts">
+                <strong>Viewer Gifts</strong>
+
+                <div>
+                  <button>👏 100</button>
+                  <button>🔥 250</button>
+                  <button>🏆 500</button>
+                </div>
+              </div>
+
+              <button class="demo-gold-button">
+                START LIVE ROOM
+              </button>
+
+              <small class="demo-note">
+                Demo only — no real stream is started.
+              </small>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- BATTLE -->
+        <div class="demo-panel" id="demo-battle">
+
+          <div class="demo-feature-title">
+            <span>SCHEDULE BREAKER</span>
+            <h3>Turn rivalries into digital events.</h3>
+          </div>
+
+          <div class="battle-card">
+
+            <div class="battle-program">
+              <div class="battle-school">A</div>
+              <strong>Program A</strong>
+              <small>Home</small>
+            </div>
+
+            <div class="battle-center">
+              <span>VIRTUAL BATTLE</span>
+              <strong>VS</strong>
+              <small>Voting closes in 02:14:08</small>
+            </div>
+
+            <div class="battle-program">
+              <div class="battle-school">B</div>
+              <strong>Program B</strong>
+              <small>Visitor</small>
+            </div>
+
+          </div>
+
+          <div class="battle-categories">
+
+            <div>
+              <span>Halftime</span>
+              <strong>47%</strong>
+            </div>
+
+            <div>
+              <span>Fifth Quarter</span>
+              <strong>53%</strong>
+            </div>
+
+            <div>
+              <span>Fan Votes</span>
+              <strong>12.8K</strong>
+            </div>
+
+          </div>
+
+          <button class="demo-gold-button">
+            VIEW EVENT EXPERIENCE
+          </button>
+
+        </div>
+
+
+        <!-- DIRECTORS -->
+        <div class="demo-panel" id="demo-directors">
+
+          <div class="demo-feature-title">
+            <span>DIRECTOR TOOLS</span>
+            <h3>Tools built around the program.</h3>
+          </div>
+
+          <div class="demo-dashboard-grid">
+
+            <div class="demo-stat-card">
+              <span>Verified Role</span>
+              <strong>Band Director</strong>
+              <small>Approved account</small>
+            </div>
+
+            <div class="demo-stat-card">
+              <span>Upcoming Auditions</span>
+              <strong>14</strong>
+              <small>Video auditions scheduled</small>
+            </div>
+
+            <div class="demo-stat-card">
+              <span>Program Followers</span>
+              <strong>8.6K</strong>
+              <small>BandStand community</small>
+            </div>
+
+            <div class="demo-stat-card">
+              <span>Upcoming Events</span>
+              <strong>3</strong>
+              <small>Battles + livestreams</small>
+            </div>
+
+          </div>
+
+          <div class="director-demo-list">
+
+            <div>
+              <strong>Video Auditions</strong>
+              <span>Host secure virtual auditions.</span>
+            </div>
+
+            <div>
+              <strong>Program Verification</strong>
+              <span>Director and professor roles require approval.</span>
+            </div>
+
+            <div>
+              <strong>Event Management</strong>
+              <span>Create digital battles, camps, and showcases.</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- CREATORS -->
+        <div class="demo-panel" id="demo-creators">
+
+          <div class="demo-feature-title">
+            <span>CREATOR ECONOMY</span>
+            <h3>Let the culture generate revenue.</h3>
+          </div>
+
+          <div class="earnings-card">
+
+            <div>
+              <span>Demo Earnings</span>
+              <strong>$2,842.50</strong>
+              <small>Illustrative only</small>
+            </div>
+
+            <div class="earnings-bars">
+
+              <div>
+                <span>Paid Streams</span>
+                <progress value="78" max="100"></progress>
+              </div>
+
+              <div>
+                <span>Virtual Classes</span>
+                <progress value="55" max="100"></progress>
+              </div>
+
+              <div>
+                <span>Digital Gifts</span>
+                <progress value="38" max="100"></progress>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="demo-split">
+
+            <div>
+              <span>Creator / Program</span>
+              <strong>90%</strong>
+            </div>
+
+            <div>
+              <span>BandStand Platform</span>
+              <strong>10%</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- TV -->
+        <div class="demo-panel" id="demo-tv">
+
+          <div class="demo-feature-title">
+            <span>BANDSTAND TV</span>
+            <h3>The culture on the biggest screen.</h3>
+          </div>
+
+          <div class="tv-feature">
+            <div>
+              <span>FEATURED</span>
+              <h4>Fifth Quarter Showdown</h4>
+              <p>
+                Original programming, live performances,
+                competitions, and on-demand band culture.
+              </p>
+
+              <button class="demo-gold-button">
+                WATCH PREVIEW
+              </button>
+            </div>
+          </div>
+
+          <div class="tv-row">
+
+            <div class="tv-tile">
+              LIVE BATTLES
+            </div>
+
+            <div class="tv-tile">
+              HALFTIME
+            </div>
+
+            <div class="tv-tile">
+              AUXILIARY
+            </div>
+
+            <div class="tv-tile">
+              ORIGINALS
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- SAFETY -->
+        <div class="demo-panel" id="demo-safety">
+
+          <div class="demo-feature-title">
+            <span>SAFETY BY DESIGN</span>
+            <h3>Different roles. Different permissions.</h3>
+          </div>
+
+          <div class="safety-flow">
+
+            <div class="safety-card">
+              <strong>Minor Account</strong>
+              <span>
+                Restricted messaging and additional safeguards.
+              </span>
+            </div>
+
+            <div class="safety-arrow">→</div>
+
+            <div class="safety-card">
+              <strong>Approved Director</strong>
+              <span>
+                Verified professional role and authorized tools.
+              </span>
+            </div>
+
+          </div>
+
+          <div class="safety-points">
+
+            <div>✓ Role-based access</div>
+            <div>✓ Director verification</div>
+            <div>✓ Reporting tools</div>
+            <div>✓ Youth messaging restrictions</div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <p class="demo-disclaimer">
+      This is a non-functional demonstration environment.
+      Numbers, schools, activity, earnings, and interactions shown
+      here are illustrative and do not represent live BandStand data.
+    </p>
+
+  </div>
+</section>
+
+  <script src="script.js?v=20260809-3"></script>
 </body>
 
 </html>

@@ -332,3 +332,81 @@ if (programInterestForm) {
     }
   );
 }
+
+
+/* =========================================================
+   BANDSTAND DEMO NAVIGATION
+   ========================================================= */
+
+const demoNavButtons =
+  document.querySelectorAll(".demo-nav");
+
+const demoPanels =
+  document.querySelectorAll(".demo-panel");
+
+demoNavButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const target =
+      button.dataset.demo;
+
+    demoNavButtons.forEach(item =>
+      item.classList.remove("active")
+    );
+
+    demoPanels.forEach(panel =>
+      panel.classList.remove("active")
+    );
+
+    button.classList.add("active");
+
+    const targetPanel =
+      document.getElementById(
+        `demo-${target}`
+      );
+
+    if (targetPanel) {
+      targetPanel.classList.add("active");
+    }
+
+  });
+
+});
+
+
+/* Prevent demo-only buttons from acting like real features */
+
+document
+  .querySelectorAll(
+    ".bandstand-demo button:not(.demo-nav)"
+  )
+  .forEach(button => {
+
+    button.addEventListener("click", event => {
+
+      event.preventDefault();
+
+      if (
+        button.classList.contains(
+          "demo-gold-button"
+        )
+      ) {
+
+        const original =
+          button.textContent;
+
+        button.textContent =
+          "DEMO PREVIEW ONLY";
+
+        setTimeout(() => {
+          button.textContent =
+            original;
+        }, 1400);
+
+      }
+
+    });
+
+  });
+
