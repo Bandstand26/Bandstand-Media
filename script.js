@@ -1,3 +1,21 @@
+/* =========================================================
+   KEEP PROGRAM INTEREST FORM AT THE TOP OF THE HOMEPAGE
+   ========================================================= */
+
+const programInterestSection =
+  document.getElementById("program-interest");
+
+const homeMain =
+  document.querySelector("main");
+
+if (programInterestSection && homeMain) {
+  homeMain.insertBefore(
+    programInterestSection,
+    homeMain.firstElementChild
+  );
+}
+
+
 const menuButton =
   document.getElementById(
     "menuButton"
