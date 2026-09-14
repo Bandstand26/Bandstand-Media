@@ -15,6 +15,33 @@ if (menuButton && mainNav) {
   });
 }
 
+/* =========================================================
+   BLOG NAVIGATION
+   ========================================================= */
+
+if (mainNav && !mainNav.querySelector('a[href="blog.html"]')) {
+  const blogLink = document.createElement("a");
+  blogLink.href = "blog.html";
+  blogLink.textContent = "Blog";
+
+  const interestLink = mainNav.querySelector('a[href="#program-interest"]');
+
+  if (interestLink) {
+    mainNav.insertBefore(blogLink, interestLink);
+  } else {
+    mainNav.appendChild(blogLink);
+  }
+}
+
+const footerLinks = document.querySelector(".footer-links");
+
+if (footerLinks && !footerLinks.querySelector('a[href="blog.html"]')) {
+  const blogFooterLink = document.createElement("a");
+  blogFooterLink.href = "blog.html";
+  blogFooterLink.textContent = "Blog";
+  footerLinks.appendChild(blogFooterLink);
+}
+
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
 
