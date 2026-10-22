@@ -167,7 +167,7 @@ if (signupForm && formMessage) {
       const response = await fetch(SIGNUP_API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email })
+        body: JSON.stringify({ email, role: document.getElementById("signupRole")?.value || "" })
       });
 
       const data = await response.json();
