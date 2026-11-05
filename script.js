@@ -321,3 +321,44 @@ document
     nav.insertBefore(a, nav.querySelector(".nav-cta"));
   }
 })();
+
+
+/* Podiumora: band program administration — coming soon */
+(() => {
+  if (document.getElementById("podiumora-coming-soon")) return;
+  const section = document.createElement("section");
+  section.id = "podiumora-coming-soon";
+  section.setAttribute("aria-labelledby", "podiumora-heading");
+  section.style.cssText = "padding:clamp(65px,8vw,110px) 6%;background:#f7f5f0;color:#091c34;border-block:1px solid #d6c6a1";
+  section.innerHTML = `
+    <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));align-items:center;gap:45px">
+      <div>
+        <p style="font-size:12px;letter-spacing:.22em;font-weight:800;color:#9d792f">A BANDSTAND MEDIA BRAND · COMING SOON</p>
+        <h2 id="podiumora-heading" style="font-family:Georgia,serif;font-size:clamp(42px,6vw,75px);font-weight:500;letter-spacing:.08em;line-height:1.1;margin:18px 0 12px;color:#071c34">PODIUMORA</h2>
+        <p style="font-weight:700;font-size:20px;letter-spacing:.12em;color:#102742">YOUR PROGRAM. YOUR PODIUM.</p>
+        <p style="line-height:1.85;color:#33445a">Podiumora is an upcoming band program management platform designed to give directors and their staff a more organized way to run their programs. From administrative coordination and program communications to managing staff, members, and everyday operations, Podiumora brings the business of running a band into one connected workspace.</p>
+        <p style="line-height:1.85;color:#33445a">For creative work, Podiumora connects with <strong>Écriture</strong>, BandStand Media’s arranging and drill-design workspace, so directors can manage their programs while planning the music and movement that bring them to life.</p>
+        <a href="#program-interest" style="display:inline-block;background:#102742;color:#fff;text-decoration:none;padding:14px 22px;border-radius:5px;font-weight:800;margin-top:14px">JOIN THE INTEREST LIST</a>
+      </div>
+      <div style="border:1px solid #d6c6a1;border-radius:18px;background:#fff;padding:clamp(26px,5vw,54px);box-shadow:0 18px 40px #10274215;text-align:center">
+        <div aria-hidden="true" style="display:inline-grid;place-items:center;width:110px;height:110px;border-radius:50%;border:3px solid #b49249;color:#102742;font:70px Georgia,serif;position:relative">P<span style="position:absolute;top:2px;right:7px;font-size:29px;color:#b49249">╱</span></div>
+        <p style="font-family:Georgia,serif;font-size:clamp(27px,4vw,42px);letter-spacing:.12em;color:#102742;margin:18px 0 6px">PODIUMORA</p>
+        <p style="font-size:12px;font-weight:800;letter-spacing:.16em;color:#102742">YOUR PROGRAM. YOUR PODIUM.</p>
+        <div style="height:1px;background:#d6c6a1;margin:28px 0"></div>
+        <p style="font-size:14px;line-height:1.7;color:#46566a">Program administration · Staff coordination · Communications · Écriture integration</p>
+        <p style="font-size:12px;font-weight:800;letter-spacing:.2em;color:#9d792f;margin-top:26px">COMING SOON</p>
+      </div>
+    </div>`;
+  const ecriture = document.getElementById("ecriture-showcase");
+  const experiences = document.getElementById("experiences");
+  const anchor = ecriture || experiences;
+  if (anchor) anchor.insertAdjacentElement("afterend", section);
+  else document.querySelector("main")?.appendChild(section);
+  const nav = document.getElementById("mainNav");
+  if (nav && !nav.querySelector('a[href="#podiumora-coming-soon"]')) {
+    const link = document.createElement("a");
+    link.href = "#podiumora-coming-soon";
+    link.textContent = "Podiumora";
+    nav.insertBefore(link, nav.querySelector(".nav-cta"));
+  }
+})();
