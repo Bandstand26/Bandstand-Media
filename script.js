@@ -338,7 +338,7 @@ document
         <p style="font-weight:700;font-size:20px;letter-spacing:.12em;color:#102742">YOUR PROGRAM. YOUR PODIUM.</p>
         <p style="line-height:1.85;color:#33445a">Podiumora is an upcoming band program management platform designed to give directors and their staff a more organized way to run their programs. From administrative coordination and program communications to managing staff, members, and everyday operations, Podiumora brings the business of running a band into one connected workspace.</p>
         <p style="line-height:1.85;color:#33445a">For creative work, Podiumora connects with <strong>Écriture</strong>, BandStand Media’s arranging and drill-design workspace, so directors can manage their programs while planning the music and movement that bring them to life.</p>
-        <a href="#program-interest" style="display:inline-block;background:#102742;color:#fff;text-decoration:none;padding:14px 22px;border-radius:5px;font-weight:800;margin-top:14px">JOIN THE INTEREST LIST</a>
+        <a href="https://lepodium.site" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#102742;color:#fff;text-decoration:none;padding:14px 22px;border-radius:5px;font-weight:800;margin-top:14px">LEARN MORE ABOUT PODIUMORA</a>
       </div>
       <div style="border:1px solid #d6c6a1;border-radius:18px;background:#fff;padding:clamp(26px,5vw,54px);box-shadow:0 18px 40px #10274215;text-align:center">
         <div aria-hidden="true" style="display:inline-grid;place-items:center;width:110px;height:110px;border-radius:50%;border:3px solid #b49249;color:#102742;font:70px Georgia,serif;position:relative">P<span style="position:absolute;top:2px;right:7px;font-size:29px;color:#b49249">╱</span></div>
