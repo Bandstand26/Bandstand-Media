@@ -341,9 +341,8 @@ document
         <a href="https://lepodium.site" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#102742;color:#fff;text-decoration:none;padding:14px 22px;border-radius:5px;font-weight:800;margin-top:14px">LEARN MORE ABOUT PODIUMORA</a>
       </div>
       <div style="border:1px solid #d6c6a1;border-radius:18px;background:#fff;padding:clamp(26px,5vw,54px);box-shadow:0 18px 40px #10274215;text-align:center">
-        <div aria-hidden="true" style="display:inline-grid;place-items:center;width:110px;height:110px;border-radius:50%;border:3px solid #b49249;color:#102742;font:70px Georgia,serif;position:relative">P<span style="position:absolute;top:2px;right:7px;font-size:29px;color:#b49249">╱</span></div>
-        <p style="font-family:Georgia,serif;font-size:clamp(27px,4vw,42px);letter-spacing:.12em;color:#102742;margin:18px 0 6px">PODIUMORA</p>
-        <p style="font-size:12px;font-weight:800;letter-spacing:.16em;color:#102742">YOUR PROGRAM. YOUR PODIUM.</p>
+        <img src="images/podiumora-logo.webp" alt="Podiumora — Your Program. Your Podium. A BandStand Media Brand" loading="lazy" style="display:block;width:min(100%,420px);height:auto;margin:0 auto;border-radius:50%;background:#07172b" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <p style="display:none;color:#102742;font-family:Georgia,serif;font-size:32px">PODIUMORA</p>
         <div style="height:1px;background:#d6c6a1;margin:28px 0"></div>
         <p style="font-size:14px;line-height:1.7;color:#46566a">Program administration · Staff coordination · Communications · Écriture integration</p>
         <p style="font-size:12px;font-weight:800;letter-spacing:.2em;color:#9d792f;margin-top:26px">COMING SOON</p>
