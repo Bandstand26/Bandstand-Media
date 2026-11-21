@@ -304,8 +304,8 @@ document
         <p style="color:#e5c785;letter-spacing:.22em;font-size:12px;font-weight:800">NEW FROM BANDSTAND MEDIA · PRODUCT PREVIEW</p>
         <h2 id="ecriture-heading" style="font-size:clamp(48px,7vw,86px);letter-spacing:-.05em;line-height:1.1;margin:12px 0">Écriture</h2>
         <p style="font-size:23px;color:#fff">Write the sound. Design the movement.</p>
-        <p style="color:#b9bbc4;line-height:1.8">A next-generation workspace concept for marching-band arranging, drill design, and show planning. Explore the product vision, illustrative screen previews, and a hands-on test workspace.</p>
-        <a href="ecriture.html" style="display:inline-block;margin-top:18px;padding:14px 22px;border-radius:6px;background:#e5c785;color:#111;text-decoration:none;font-weight:800">EXPLORE ÉCRITURE →</a>
+        <p style="color:#b9bbc4;line-height:1.8">A next-generation workspace concept for marching-band arranging, drill design, and show planning. Visit the official Écriture website to explore arranging, drill design, and show-planning features.</p>
+        <a href="https://getecriture.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:18px;padding:14px 22px;border-radius:6px;background:#e5c785;color:#111;text-decoration:none;font-weight:800">VISIT ÉCRITURE WEBSITE →</a>
       </div>
       <div aria-label="Illustrative Écriture interface preview" style="border:1px solid #5b5d64;border-radius:14px;overflow:hidden;background:#14161a;box-shadow:0 20px 45px #0008">
         <div style="padding:14px 20px;background:#26292e;color:#eee;font-weight:800;letter-spacing:.1em">ÉCRITURE <span style="float:right;color:#e5c785;font-size:12px">SCORE · DRILL · SHOW</span></div>
@@ -314,9 +314,11 @@ document
     </div>`;
   experiences.insertAdjacentElement("afterend", section);
   const nav = document.getElementById("mainNav");
-  if (nav && !nav.querySelector('a[href="ecriture.html"]')) {
+  if (nav && !nav.querySelector('a[href="https://getecriture.com/" target="_blank" rel="noopener noreferrer"]')) {
     const a = document.createElement("a");
-    a.href = "ecriture.html";
+    a.href = "https://getecriture.com/";
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
     a.textContent = "Écriture";
     nav.insertBefore(a, nav.querySelector(".nav-cta"));
   }
