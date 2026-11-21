@@ -369,3 +369,31 @@ document
     nav.insertBefore(link, nav.querySelector(".nav-cta"));
   }
 })();
+
+
+/* Collapse the sticky header to a compact toolbar after scrolling. */
+(() => {
+  const header = document.querySelector(".site-header");
+  const button = document.getElementById("menuButton");
+  const nav = document.getElementById("mainNav");
+  if (!header) return;
+  const syncHeader = () => header.classList.toggle("is-compact", window.scrollY > 90);
+  window.addEventListener("scroll", syncHeader, { passive: true });
+  syncHeader();
+  if (button && nav) {
+    button.addEventListener("click", () => {
+      button.setAttribute("aria-label", nav.classList.contains("open") ? "Close navigation" : "Open navigation");
+    });
+    nav.addEventListener("click", event => {
+      if (event.target.closest("a")) button.setAttribute("aria-label", "Open navigation");
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && nav.classList.contains("open")) {
+        nav.classList.remove("open");
+        button.setAttribute("aria-expanded", "false");
+        button.setAttribute("aria-label", "Open navigation");
+        button.focus();
+      }
+    });
+  }
+})();
