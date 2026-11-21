@@ -290,40 +290,46 @@ document
   });
 
 
-/* Écriture product showcase on the BandStand Media homepage */
+/* Écriture — silver-and-black branded homepage feature */
 (() => {
   const experiences = document.getElementById("experiences");
   if (!experiences || document.getElementById("ecriture-showcase")) return;
   const section = document.createElement("section");
   section.id = "ecriture-showcase";
   section.setAttribute("aria-labelledby", "ecriture-heading");
-  section.style.cssText = "padding:clamp(55px,8vw,110px) 6%;background:linear-gradient(135deg,#191b20,#08090b);border-top:1px solid #45474c;border-bottom:1px solid #45474c";
+  section.style.cssText = "position:relative;overflow:hidden;padding:clamp(65px,8vw,115px) 6%;background:radial-gradient(ellipse at 85% 25%,#32343a 0%,#101115 42%,#030304 85%);color:#e9e9eb;border-block:1px solid #83868c";
   section.innerHTML = `
-    <div style="max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:45px;align-items:center">
+    <div style="position:absolute;inset:0;pointer-events:none;opacity:.22;background:linear-gradient(142deg,transparent 0%,transparent 19%,#a4a7af 19.2%,transparent 19.8%,transparent 78%,#c9cbd1 78.2%,transparent 79%)"></div>
+    <div style="position:relative;max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:45px;align-items:center">
       <div>
-        <p style="color:#e5c785;letter-spacing:.22em;font-size:12px;font-weight:800">BANDSTAND MEDIA · NOW LIVE · 14-DAY TRIAL</p>
-        <h2 id="ecriture-heading" style="font-size:clamp(48px,7vw,86px);letter-spacing:-.05em;line-height:1.1;margin:12px 0">Écriture</h2>
-        <p style="font-size:23px;color:#fff">Write the sound. Design the movement.</p>
-        <p style="color:#b9bbc4;line-height:1.8">Écriture is live and available for purchase. Create and arrange music, design drill, and plan marching-band shows in one creative workspace. Start with a 14-day trial on the official Écriture website.</p>
-        <a href="https://getecriture.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:18px;padding:14px 22px;border-radius:6px;background:#e5c785;color:#111;text-decoration:none;font-weight:800">START YOUR 14-DAY ÉCRITURE TRIAL →</a>
+        <p style="font-size:12px;font-weight:800;letter-spacing:.23em;color:#c4c6cc">BANDSTAND MEDIA · LIVE NOW · 14-DAY TRIAL</p>
+        <div aria-hidden="true" style="font:clamp(70px,10vw,125px) Georgia,serif;line-height:1;color:#e3e4e8;text-shadow:0 2px 0 #777,0 7px 18px #fff3">É</div>
+        <h2 id="ecriture-heading" style="font:400 clamp(36px,5vw,64px) Georgia,serif;letter-spacing:.16em;line-height:1.15;margin:8px 0 22px;color:#f3f3f4;text-shadow:0 2px 8px #ffffff25">ÉCRITURE</h2>
+        <p style="font:italic 600 clamp(22px,3vw,33px) Georgia,serif;line-height:1.35;letter-spacing:.025em;color:#ededf0;margin:0 0 20px">WRITE THE SOUND.<br>DESIGN THE MOVEMENT.</p>
+        <p style="color:#c3c5cb;line-height:1.85">An all-in-one music arranging, drill design, and show-planning platform built for marching bands. Écriture is live, ready to purchase, and offers a 14-day trial.</p>
+        <p style="font-size:12px;letter-spacing:.12em;color:#c9cbd0;margin-top:24px">MUSIC ARRANGING &nbsp;·&nbsp; DRILL DESIGN &nbsp;·&nbsp; SHOW PLANNING</p>
+        <a href="https://getecriture.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:22px;padding:15px 24px;border-radius:6px;background:linear-gradient(120deg,#7f8188,#f3f3f4 46%,#a4a6ad);border:1px solid #f4f4f4;color:#101114;text-decoration:none;font-weight:800;box-shadow:0 4px 22px #ffffff2a">GET ÉCRITURE · START 14-DAY TRIAL →</a>
       </div>
-      <div aria-label="Illustrative Écriture interface preview" style="border:1px solid #5b5d64;border-radius:14px;overflow:hidden;background:#14161a;box-shadow:0 20px 45px #0008">
-        <div style="padding:14px 20px;background:#26292e;color:#eee;font-weight:800;letter-spacing:.1em">ÉCRITURE <span style="float:right;color:#e5c785;font-size:12px">SCORE · DRILL · SHOW</span></div>
-        <div style="padding:24px"><div style="color:#b9bbc4;font-size:12px;margin-bottom:16px">TEST SCHOOL / SCORE PREVIEW</div><div style="background:#e8e5df;border-radius:5px;padding:28px 18px"><div style="height:90px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 10px,#858585 11px,#858585 12px,transparent 13px,transparent 14px);background-size:100% 56px;background-repeat:no-repeat;background-position:center"></div></div><p style="color:#b9bbc4;font-size:12px;margin-bottom:0">Illustrative preview — not live notation software</p></div>
+      <div aria-label="Écriture score and drill design illustration" style="border:1px solid #777b82;border-radius:14px;overflow:hidden;background:#0c0d10;box-shadow:0 20px 50px #000a,0 0 25px #c6c8d01c">
+        <div style="padding:15px 18px;background:linear-gradient(90deg,#1c1d22,#33353a);border-bottom:1px solid #74767e;font:16px Georgia,serif;letter-spacing:.15em;color:#e9e9ec">ÉCRITURE <span style="float:right;font:11px Arial,sans-serif;letter-spacing:.08em;color:#c4c5c9">SCORE · DRILL · SHOW</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px">
+          <div style="background:#191b1f;border:1px solid #50535a;padding:12px;min-height:215px"><p style="color:#e0e0e4;font-size:11px;letter-spacing:.12em;margin:0 0 18px">ARRANGING / SCORE</p><div style="height:130px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 9px,#c4c5c8 10px,#c4c5c8 11px,transparent 12px,transparent 13px);background-size:100% 62px;background-repeat:repeat-y;color:#f4f4f4;padding:12px 4px;font:22px Georgia,serif;letter-spacing:.2em">♪ ♫ ♩<br><br>♬ ♪ ♩</div></div>
+          <div style="background:#1b2723;border:1px solid #747b78;padding:12px;min-height:215px"><p style="color:#e0e0e4;font-size:11px;letter-spacing:.12em;margin:0 0 14px">DRILL / FIELD VIEW</p><div style="height:150px;display:grid;place-items:center;background:repeating-linear-gradient(to bottom,transparent 0,transparent 28px,#bfc5c04a 29px,#bfc5c04a 30px);font-size:19px;line-height:1.7;letter-spacing:.25em;color:#e7e7e8;text-align:center">● ● ● ●<br>● ● ● ●<br>● ● ● ●</div></div>
+        </div>
+        <div style="padding:12px 18px;background:#22242a;color:#bfc1c8;font-size:12px;letter-spacing:.08em;text-align:center">ARRANGE THE MUSIC. DESIGN THE FIELD. BUILD THE SHOW.</div>
       </div>
     </div>`;
   experiences.insertAdjacentElement("afterend", section);
   const nav = document.getElementById("mainNav");
-  if (nav && !nav.querySelector('a[href="https://getecriture.com/" target="_blank" rel="noopener noreferrer"]')) {
-    const a = document.createElement("a");
-    a.href = "https://getecriture.com/";
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    a.textContent = "Écriture";
-    nav.insertBefore(a, nav.querySelector(".nav-cta"));
+  if (nav && !Array.from(nav.querySelectorAll("a")).some(a => a.href === "https://getecriture.com/")) {
+    const link = document.createElement("a");
+    link.href = "https://getecriture.com/";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = "Écriture";
+    nav.insertBefore(link, nav.querySelector(".nav-cta"));
   }
 })();
-
 
 /* Podiumora: band program administration — coming soon */
 (() => {
