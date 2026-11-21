@@ -301,11 +301,11 @@ document
   section.innerHTML = `
     <div style="max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:45px;align-items:center">
       <div>
-        <p style="color:#e5c785;letter-spacing:.22em;font-size:12px;font-weight:800">NEW FROM BANDSTAND MEDIA · PRODUCT PREVIEW</p>
+        <p style="color:#e5c785;letter-spacing:.22em;font-size:12px;font-weight:800">BANDSTAND MEDIA · NOW LIVE · 14-DAY TRIAL</p>
         <h2 id="ecriture-heading" style="font-size:clamp(48px,7vw,86px);letter-spacing:-.05em;line-height:1.1;margin:12px 0">Écriture</h2>
         <p style="font-size:23px;color:#fff">Write the sound. Design the movement.</p>
-        <p style="color:#b9bbc4;line-height:1.8">A next-generation workspace concept for marching-band arranging, drill design, and show planning. Visit the official Écriture website to explore arranging, drill design, and show-planning features.</p>
-        <a href="https://getecriture.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:18px;padding:14px 22px;border-radius:6px;background:#e5c785;color:#111;text-decoration:none;font-weight:800">VISIT ÉCRITURE WEBSITE →</a>
+        <p style="color:#b9bbc4;line-height:1.8">Écriture is live and available for purchase. Create and arrange music, design drill, and plan marching-band shows in one creative workspace. Start with a 14-day trial on the official Écriture website.</p>
+        <a href="https://getecriture.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:18px;padding:14px 22px;border-radius:6px;background:#e5c785;color:#111;text-decoration:none;font-weight:800">START YOUR 14-DAY ÉCRITURE TRIAL →</a>
       </div>
       <div aria-label="Illustrative Écriture interface preview" style="border:1px solid #5b5d64;border-radius:14px;overflow:hidden;background:#14161a;box-shadow:0 20px 45px #0008">
         <div style="padding:14px 20px;background:#26292e;color:#eee;font-weight:800;letter-spacing:.1em">ÉCRITURE <span style="float:right;color:#e5c785;font-size:12px">SCORE · DRILL · SHOW</span></div>
@@ -335,19 +335,19 @@ document
   section.innerHTML = `
     <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));align-items:center;gap:45px">
       <div>
-        <p style="font-size:12px;letter-spacing:.22em;font-weight:800;color:#9d792f">A BANDSTAND MEDIA BRAND · COMING SOON</p>
+        <p style="font-size:12px;letter-spacing:.22em;font-weight:800;color:#9d792f">A BANDSTAND MEDIA BRAND · NOW LIVE · 14-DAY TRIAL</p>
         <h2 id="podiumora-heading" style="font-family:Georgia,serif;font-size:clamp(42px,6vw,75px);font-weight:500;letter-spacing:.08em;line-height:1.1;margin:18px 0 12px;color:#071c34">PODIUMORA</h2>
         <p style="font-weight:700;font-size:20px;letter-spacing:.12em;color:#102742">YOUR PROGRAM. YOUR PODIUM.</p>
-        <p style="line-height:1.85;color:#33445a">Podiumora is an upcoming band program management platform designed to give directors and their staff a more organized way to run their programs. From administrative coordination and program communications to managing staff, members, and everyday operations, Podiumora brings the business of running a band into one connected workspace.</p>
+        <p style="line-height:1.85;color:#33445a">Podiumora is live and available for purchase, with a 14-day trial. The band program management platform gives directors and their staff a more organized way to run their programs. From administrative coordination and program communications to managing staff, members, and everyday operations, Podiumora brings the business of running a band into one connected workspace.</p>
         <p style="line-height:1.85;color:#33445a">For creative work, Podiumora connects with <strong>Écriture</strong>, BandStand Media’s arranging and drill-design workspace, so directors can manage their programs while planning the music and movement that bring them to life.</p>
-        <a href="https://lepodium.site" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#102742;color:#fff;text-decoration:none;padding:14px 22px;border-radius:5px;font-weight:800;margin-top:14px">LEARN MORE ABOUT PODIUMORA</a>
+        <a href="https://lepodium.site" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#102742;color:#fff;text-decoration:none;padding:14px 22px;border-radius:5px;font-weight:800;margin-top:14px">EXPLORE PODIUMORA · START 14-DAY TRIAL</a>
       </div>
       <div style="border:1px solid #d6c6a1;border-radius:18px;background:#fff;padding:clamp(26px,5vw,54px);box-shadow:0 18px 40px #10274215;text-align:center">
         <img src="images/podiumora-logo.webp" alt="Podiumora — Your Program. Your Podium. A BandStand Media Brand" loading="lazy" style="display:block;width:min(100%,420px);height:auto;margin:0 auto;border-radius:50%;background:#07172b" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
         <p style="display:none;color:#102742;font-family:Georgia,serif;font-size:32px">PODIUMORA</p>
         <div style="height:1px;background:#d6c6a1;margin:28px 0"></div>
         <p style="font-size:14px;line-height:1.7;color:#46566a">Program administration · Staff coordination · Communications · Écriture integration</p>
-        <p style="font-size:12px;font-weight:800;letter-spacing:.2em;color:#9d792f;margin-top:26px">COMING SOON</p>
+        <p style="font-size:12px;font-weight:800;letter-spacing:.2em;color:#9d792f;margin-top:26px">NOW LIVE · AVAILABLE TO PURCHASE · 14-DAY TRIAL</p>
       </div>
     </div>`;
   const ecriture = document.getElementById("ecriture-showcase");
